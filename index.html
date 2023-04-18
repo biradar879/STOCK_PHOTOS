@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        var downloadLink = document.querySelector('a[download]');
+        downloadLink.addEventListener('click', function(event) {
+          event.preventDefault();
+          var imageSrc = this.href;
+          var link = document.createElement('a');
+          link.href = imageSrc;
+          link.download = 'image.jpg'; // Specify the desired filename for download
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+            </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/img3.jpg" alt="logo" >
+            <i onclick="OpenNav()"  class="fas fa-bars fa-2x"></i>
+        </nav>
+        <div id="side-nav">
+            <i  onclick="CloseNav()"  class="fas fa-times fa-2x"></i>
+            <a href="./home.html">Home</a>
+            <a href="#">Library</a>
+            <a href="#">Contribute</a>
+            <a href="#">SignUp</a>
+            <a href="#">SignIn</a>
+        </div>
+        <div class="content">
+            <h1>Stock Photos</h1>
+            <p>High quality images are shared by our talented community</p>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search Images"/>
+            <i class="fas fa-search fa-2x"></i>
+
+        </div>
+    </header>
+    <section class="row">
+        <!-- first Column -->
+        
+         <!-- Second Column -->
+         <div class="column">
+            <!-- Second Image -->
+            <div class="img-wrapper">
+                <img src="./images/img4.jpg" alt="img">
+                <div class="overlay">
+                    <div class="user">
+                        <i class="fas fa-user-circle"></i>
+                        <h5>RakshithCC</h5>
+                    </div>
+                    <div class="icon">
+                       
+                        <a href="./images/img4.jpg" download>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div>
+         <!-- Third Column -->
+         <div class="column">
+            <!-- Third Image -->
+            <div class="img-wrapper">
+                <img src="./images/img5.jpg" alt="img">
+                <div class="overlay">
+                    <div class="user">
+                        <i class="fas fa-user-circle"></i>
+                        <h5>Manasa</h5>
+                    </div>
+                    <div class="icon">
+                        <a href="./images/img5.jpg" download>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+      <!-- fourth Column -->
+      <div class="column">
+        <!-- fourth Image -->
+        <div class="img-wrapper">
+            <img src="./images/img9.jpg" alt="img">
+            <div class="overlay">
+                <div class="user">
+                    <i class="fas fa-user-circle"></i>
+                    <h5>Abhishek</h5>
+                </div>
+                <div class="icon">
+                    <a href="./images/img9.jpg" download>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+    <div class="column">
+        <!-- Second Image -->
+
+                <div class="img-wrapper">
+                    <img src="./images/img2.jpg" alt="img">
+                    <div class="overlay">
+                        <div class="user">
+                            <i class="fas fa-user-circle"></i>
+                            <h5>Sandesh</h5>
+                        </div>
+                        <div class="icon">
+                            <a href="./images/img2.jpg" download>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <!-- first Image -->
+                <div class="img-wrapper">
+                    <img src="./images/img8.jpg" alt="img">
+                    <div class="overlay">
+                        <div class="user">
+                            <i class="fas fa-user-circle"></i>
+                            <h5>Sneha</h5>
+                        </div>
+                        <div class="icon">
+                            <a href="./images/img8.jpg" download>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                     <!-- first Image -->
+               
+                     <!-- first Image -->
+               
+               </div>
+    
+            </div>
+           
+        
+
+
+
+
+
+            
+<div class="column">
+    <!-- first Image -->
+    <div class="img-wrapper">
+        <img src="./images/img7.jpg" alt="img">
+        <div class="overlay">
+            <div class="user">
+                <i class="fas fa-user-circle"></i>
+                <h5>Swastik</h5>
+            </div>
+            <div class="icon">
+                <a href="./images/img7.jpg" download>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+            </div>
+
+        </div>
+         <!-- first Image -->
+   
+         <!-- first Image -->
+   
+   </div>
+
+</div>
+</div>
+    </section>
+   
+        <footer>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          
+    </footer>
+    <script>
+        const sideNav = document.getElementById('side-nav');
+
+        function OpenNav(){
+            sideNav.style.width='250px';
+        }
+        function CloseNav(){
+            sideNav.style.width='0px';
+        }
+
+
+
+    </script>
+</body>
+</html>
